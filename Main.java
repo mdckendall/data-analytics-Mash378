@@ -9,7 +9,7 @@ class Main {
 		ArrayList<String> arrayList = new ArrayList<>();
     int number=0;
     do{
-      System.out.println("Press 1 to get whether");
+      System.out.println("Press 1 to getwhether");
       System.out.println("Press 2 to get politics");
       System.out.println("Press 3 to get sports");
       System.out.println("Press 4 to get names of Party Members");
@@ -30,6 +30,7 @@ class Main {
           System.out.println("MLS is not a retirement league says David Beckham");
           break;
         case 4:
+          System.out.println("Current students:");
           while (fileScanner.hasNextLine()){
             System.out.println(fileScanner.nextLine());
           }
