@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 class Main {
 	public static void main(String[] args) throws FileNotFoundException {
-
+     Scanner code= new Scanner(System.in);
 		ArrayList<String> arrayList = new ArrayList<>();
     int number=0;
     do{
@@ -14,7 +14,7 @@ class Main {
       System.out.println("Press 3 to learn about demand.");
       System.out.println("Press 4 to view current students.");
       System.out.println("Press 5 to quit.");
-      Scanner code= new Scanner(System.in);
+     
       number= code.nextInt();
   		FileReader fr = new FileReader("names.txt");
   		Scanner fileScanner = new Scanner(fr);
@@ -35,8 +35,8 @@ class Main {
             System.out.println(fileScanner.nextLine());
           }
       }
-      code.close();
+
     } while (number!=5);
-		
+		code.close();
 	}
 }
