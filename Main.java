@@ -13,7 +13,7 @@ class Main {
       System.out.println("Press 2 to learn about the job.");
       System.out.println("Press 3 to learn about demand.");
       System.out.println("Press 4 to view current students.");
-      System.out.println("Press 5 to quit");
+      System.out.println("Press 5 to quit.");
       Scanner code= new Scanner(System.in);
       number= code.nextInt();
   		FileReader fr = new FileReader("names.txt");
