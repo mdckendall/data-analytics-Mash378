@@ -9,6 +9,9 @@ class Main {
 		ArrayList<String> arrayList = new ArrayList<>();
 		FileReader fr = new FileReader("names.txt");
 		Scanner fileScanner = new Scanner(fr);
+    while (fileScanner.hasNextLine()){
+      System.out.println(fileScanner.nextLine());
+    }
 		
 	}
 }
