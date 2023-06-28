@@ -9,28 +9,28 @@ class Main {
 		ArrayList<String> arrayList = new ArrayList<>();
     int number=0;
     do{
-      System.out.println("Press 1 to getwhether");
-      System.out.println("Press 2 to get politics");
-      System.out.println("Press 3 to get sports");
-      System.out.println("Press 4 to get names of Party Members");
-      System.out.println("Press 5 to exit");
+      System.out.println("Press 1 to learn about salary.");
+      System.out.println("Press 2 to learn about the job.");
+      System.out.println("Press 3 to learn about demand.");
+      System.out.println("Press 4 to view current students.");
+      System.out.println("Press 5 to quit");
       Scanner code= new Scanner(System.in);
       number= code.nextInt();
   		FileReader fr = new FileReader("names.txt");
   		Scanner fileScanner = new Scanner(fr);
-      
+      // feedback
       switch(number){
         case 1:
-          System.out.println("Today will be sunny");
+          System.out.println("$98,345 average salary in South Florida!");
           break;
         case 2:
-          System.out.println("Senator involved in a scandal");
+          System.out.println("US News - 100 Best Jobs!");
           break;
         case 3:
-          System.out.println("MLS is not a retirement league says David Beckham");
+          System.out.println("Top 10 Forbes In-Demand jobs!");
           break;
         case 4:
-          System.out.println("Current students:");
+          System.out.println("Current Students:");
           while (fileScanner.hasNextLine()){
             System.out.println(fileScanner.nextLine());
           }
