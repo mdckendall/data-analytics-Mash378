@@ -35,6 +35,7 @@ class Main {
             System.out.println(fileScanner.nextLine());
           }
       }
+      code.close();
     } while (number!=5);
 		
 	}
